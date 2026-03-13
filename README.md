@@ -23,4 +23,69 @@ The dataset includes customer information such as:
 - subscribed services
 - billing information
 - churn status
+
+ 
+## Project Workflow
+
+The notebook follows an industry-style machine learning workflow:
+
+1. Business Understanding  
+2. Data Understanding  
+3. Data Cleaning  
+4. Exploratory Data Analysis (EDA)  
+5. Feature Investigation  
+6. Feature Engineering  
+7. Data Preprocessing using Pipeline  
+8. Modeling Approach  
+9. Model Evaluation  
+10. Feature Importance Insights  
+11. Threshold Optimization  
+12. Modeling Summary  
+13. Business Recommendations  
+14. Conclusion
+
+## Feature Engineering
+
+Several engineered features were created based on patterns observed during analysis:
+
+**CustomerStage**
+
+
+Tenure determines the stage of the customer lifecycle.
+**ServiceCount**
+
+Customer service engagement is represented by the number of services they have subscribed to.
+
+**HighMonthlyCost**
+Customers who pay monthly fees that are higher than average are identified by this indicator.
+
+These characteristics help in identifying patterns of behavior associated to churn risk.
+
+## Modeling Approach
+
+Two machine learning models were implemented:
+### Logistic Regression
+Because it is easy to understand and can show general churn patterns, it is used as a baseline model.
+### Random Forest
+used to identify non-linear relationships in the data 
+
+The following methods were used to optimize the Random Forest model:
+- GridSearchCV
+- Stratified 5-Fold Cross-Validation
+- ROC-AUC scoring
+
   
+## Model Results
+
+The tuned Random Forest model demonstrated strong predictive capability and outperformed the baseline Logistic Regression model.
+
+Evaluation metrics, including ROC-AUC and Precision–Recall analysis, confirm its ability to effectively distinguish high-risk churn customers.
+
+
+Key factors influencing churn behavior are further highlighted by feature importance analysis.
+
+## Model Performance
+
+Example evaluation visualization from the model:
+
+![ROC Curve](roc_curve.png)
