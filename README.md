@@ -89,3 +89,49 @@ Key factors influencing churn behavior are further highlighted by feature import
 Example evaluation visualization from the model:
 
 ![ROC Curve](roc_curve.png)
+
+## Feature Importance Insights
+
+The main factors influencing churn were identified through feature importance analysis.
+
+The strongest predictor was found to be customer tenure, suggesting that new customers are more likely to leave.
+
+Billing-related factors like **TotalCharges** and **MonthlyCharges** are also significant, indicating that churn behavior may be influenced by perceived service cost.
+
+Longer commitments and higher service engagement are associated with lower churn risk, according to contract type and service adoption variables like **ServiceCount**, **OnlineSecurity**, and **TechSupport**.
+
+## Threshold Optimization
+
+Instead of relying on the default classification threshold (0.5), multiple thresholds were evaluated to balance:
+
+- precision
+- recall
+- F1 score
+
+This enables the model to align predictions with business priorities such as maximizing churn detection or minimizing unnecessary interventions.
+
+## Key Insights
+
+Customers are more likely to churn when they:
+
+- have shorter tenure
+- pay higher monthly charges
+- subscribe to fewer services
+
+These insights highlight opportunities for targeted retention strategies.
+
+## Business Recommendations
+
+Based on the analysis and model predictions:
+
+- Give early-stage customers' engagement strategies top priority.
+- Provide specific incentives to expensive clients.
+- Promote the use of extra services Using model predictions.
+-  proactively identify high-risk clients.
+
+These steps can help improve churn prevention strategies.
+
+## Conclusion
+
+This project shows how data-driven customer retention and churn prediction strategies can be supported by machine learning.
+By combining exploratory analysis, feature engineering, optimized modeling, and business interpretation, the solution provides both predictive capability and actionable insights for telecom churn management.
