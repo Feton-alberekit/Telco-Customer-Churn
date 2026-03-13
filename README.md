@@ -15,8 +15,7 @@ By predicting which customers are likely to churn, companies can:
 
 The project uses the **Telco Customer Churn Dataset**.
 
-Source:  
-[click_hear](https://www.kaggle.com/blastchar/telco-customer-churn)
+Source: [click_hear](https://www.kaggle.com/blastchar/telco-customer-churn)
 
 The dataset includes customer information such as:
 - demographics
