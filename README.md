@@ -99,7 +99,7 @@ The strongest predictor was found to be customer tenure, suggesting that new cus
 Billing-related factors like **TotalCharges** and **MonthlyCharges** are also significant, indicating that churn behavior may be influenced by perceived service cost.
 
 Longer commitments and higher service engagement are associated with lower churn risk, according to contract type and service adoption variables like **ServiceCount**, **OnlineSecurity**, and **TechSupport**.
-![Feature Importance](Feature Importance.png)
+![Feature Importance](Feature_Importance.png)
 ## Threshold Optimization
 
 Instead of relying on the default classification threshold (0.5), multiple thresholds were evaluated to balance:
